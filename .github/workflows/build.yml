@@ -29,5 +29,6 @@ jobs:
         uses: wzieba/Firebase-Distribution-Github-Action@v1.5.0
         with:
           appId: ${{ secrets.FIREBASE_APP_ID }}
+          serviceCredentialsFile: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
           groups: testers
           path: app/build/outputs/apk/release/app-release.apk
